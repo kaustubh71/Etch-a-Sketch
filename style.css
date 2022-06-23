@@ -1,0 +1,146 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+html {
+   /* footer support */
+   position: relative;
+   min-height: 100%;
+ }
+
+body {
+   background-color: #1f2937;
+   color: white;
+   font-family: Karla;
+   /* accent-color: #55f991; */
+}
+
+#container {
+   margin: 40px 80px;
+   display: flex;
+   flex-direction: column;
+}
+
+h1 {
+   padding-bottom: 40px;
+   font-size: 40px;
+   font-weight: 800;
+   line-height: 40px;
+   letter-spacing: -0.025em;
+}
+
+#div-container {
+   display: grid;
+   border: 2px solid #10B981;
+   width: 100%;
+   height: 500px;
+}
+
+.gridElement {
+   user-select: none;
+}
+
+#control-bar {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding-bottom: 40px;
+}
+
+#color-change {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+#button-grp {
+   margin: 0 30px;
+}
+
+button {
+   padding: 5px 8px;
+   margin: 0 10px;
+   background-color: #10B981;
+   color: white; 
+   border-radius: 4px;
+   border: none;
+}
+
+button,
+input[type='color'] {
+  transition: transform 0.1s ease-in-out;
+}
+
+button:hover,
+input[type='color']:hover {
+  transform: scale(1.1);
+}
+
+input[type='color']:active {
+  transition: transform 0.05s ease-in-out;
+  transform: scale(1);
+}
+
+input[type='color'] {
+   overflow: hidden;
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+}
+
+input[type='color']::-webkit-color-swatch-wrapper {
+   border: none;
+   border-radius: 50%;
+   padding: 0;
+ }
+ 
+ input[type='color']::-webkit-color-swatch {
+   border: none;
+   border-radius: 50%;
+   padding: 0;
+ } 
+
+ #slider {
+   border-radius: 8px;
+   height: 8px;
+   width: 150px;
+   outline: none;
+   -webkit-appearance: none;
+ }
+ 
+ input[type='range']::-webkit-slider-thumb {
+   width: 6px;
+   -webkit-appearance: none;
+   height: 16px;
+   background: #55f991;
+   border-radius: 2px;
+ }
+ /* FOOTER */
+
+ #footer {
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 10px;
+   width: 100%;
+   padding: 10px;
+   font-size: 20px;
+ }
+
+ .fa-github {
+   color: white;
+   font-size: 24px;
+   transition: transform 0.3s ease-in-out;
+ }
+ 
+ .fa-github:hover {
+   transform: rotate(360deg) scale(1.2);
+ }

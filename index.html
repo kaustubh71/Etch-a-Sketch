@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-A-Sketch</title>
+    <link rel="stylesheet" href="style.css">
+    <script
+      src="https://kit.fontawesome.com/4c536a6bd5.js"
+      crossorigin="anonymous"
+    ></script>
+</head>
+<body>
+    <div id="container">
+        <h1>ETCH-A-SKETCH</h1>
+        
+        <div id="control-bar">
+            
+            <div id="color-change">
+                <input type="color" value="#55f991" id="color-picker">
+                <button id="color-btn">Color Mode</button>
+            </div>
+            
+            <div id="button-grp">
+                <button id="rainbow-btn">Rainbow Mode</button>
+                <button id="erase-btn">Erase Mode</button>
+                <button id="clear-btn">Clear Mode</button>
+            </div>
+
+            <div id ="slider-component">
+                <p id="slider-text">16 X 16</p>
+                <input type="range" min="1" max="64" value="16" id="slider" >
+            </div>
+        </div>
+        
+        <div id="div-container"></div>
+
+    </div>
+
+    <footer id="footer">
+        <p>
+          Copyright ©
+          <script>
+            document.write(new Date().getFullYear())
+          </script>
+          kaustubh71
+        </p>
+        <a href="https://github.com/kaustubh71" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+    </footer>
+    
+      <script src="index.js"></script>
+</body>
+</html>
